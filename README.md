@@ -194,7 +194,7 @@ The architecture consists of five robust layers: User, Application, Security, St
 #### Output 1 - System Initialization & QKD
 The console log below demonstrates the BB84 protocol simulation. It shows the generation of random qubits, basis selection by Alice and Bob, and the sifting process where mismatched bases are discarded to form the raw quantum key.
 
-<img width="600" height="300" alt="Code_Generated_Image" src="https://github.com/user-attachments/assets/ed1ca6ea-c8e5-4cfa-b642-41ad315700e6" />
+![Initilazation](https://github.com/user-attachments/assets/2e5535ad-ce41-4875-8c43-d811aaf6b60e)
 
  
 
@@ -202,7 +202,7 @@ The console log below demonstrates the BB84 protocol simulation. It shows the ge
 This output details the classical encryption phase. The system takes the plaintext (e.g., "Confidential Medical Record"), derives a hybrid session key, and generates the Ciphertext and Authentication Tag using AES-GCM before transmission.
 
 
-<img width="650" height="300" alt="Code_Generated_Image (1)" src="https://github.com/user-attachments/assets/9ecccced-dd6e-49f5-a8bb-811c2c3fd8b3" />
+![Key Generation](https://github.com/user-attachments/assets/cc0f2237-e190-47bf-b1a6-4d89682a181f)
 
 
 
@@ -210,7 +210,7 @@ This output details the classical encryption phase. The system takes the plainte
 At the receiver's end, the log confirms the receipt of the payload. It explicitly states **"Integrity Verified"** (proving no tampering occurred) before decrypting the ciphertext back to the original plaintext.
 
 
-<img width="650" height="280" alt="Code_Generated_Image (2)" src="https://github.com/user-attachments/assets/88a7d9e9-1613-419e-a9bb-1addd1167a01" />
+![Intergrity](https://github.com/user-attachments/assets/0bb60946-37ab-4563-bbb5-ab05d8531b10)
 
 
 
